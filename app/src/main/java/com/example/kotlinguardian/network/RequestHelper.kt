@@ -20,6 +20,7 @@ inline fun <reified T> Call<T>.getResult(noinline fail:(String)->Unit={},noinlin
 
         override fun onFailure(call: Call<T>, t: Throwable) {
             fail(t.toString())
+
         }
 
     })
